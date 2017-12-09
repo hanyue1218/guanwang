@@ -1,0 +1,26 @@
+<div class="layout padding-big-top padding-big-bottom bg-gray">
+  <div class="container"> <b>友情链接：</b> {dede:flink titlelen='20' row='20' type='text'}  [field:link /]  &nbsp;&nbsp;{/dede:flink} </div>
+</div>
+<div class="container-layout bg-footnav padding-big-top padding-big-bottom clearfix">
+  <div class="padding container">
+    <div class="xl12 xs12 xm8 xb9 footmenu">
+      <p>在线客服  ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;menu=yes" rel="nofollow" ><i class="qq"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;服务热线： {dede:global.cfg_dh/}
+        &nbsp;&nbsp;&nbsp;&nbsp;电子邮箱: {dede:global.cfg_yx} </p>
+      <p>公司地址：{dede:global.cfg_dz/}</p>
+      <p>{dede:sql sql='Select content from dede_arctype where id=1'} 
+        
+        [field:content  function='cn_substr(html2text(@me),300)'/]...
+        
+        {/dede:sql}</p>
+    </div>
+    <div class="hidden-l hidden-s xm4 xb3 text-right wx"> <img class="foot-weixin" src="/skin/images/weixin.jpg"> </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div class="container-layout bg-sub padding-top padding-bottom clearfix">
+  <div class="container">
+    <div class="hidden-l hidden-s xm3 xb2"> <a href="http://www.miitbeian.gov.cn" target="_blank">备案号：{dede:global.cfg_beian/}</a>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+    <div class="xl12 xs12 xm9 xb10 text-right"> {dede:global.cfg_powerby/} 技术支持：<a href="http://www.technocy.com/" target="_blank">驰宇科技</a></div>
+    <div class="clearfix"></div>
+  </div>
+</div>

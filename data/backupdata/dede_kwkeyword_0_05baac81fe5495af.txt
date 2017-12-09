@@ -1,0 +1,14 @@
+INSERT INTO `dede_kwkeyword` VALUES('1','1','马赛克 新品','0','0','3','1331689776');
+INSERT INTO `dede_kwkeyword` VALUES('2','2','马赛克 生活','0','0','3','1331689801');
+INSERT INTO `dede_kwkeyword` VALUES('3','3','时尚 马赛克','0','0','3','1331689826');
+INSERT INTO `dede_kwkeyword` VALUES('4','4','马赛克 玩法','0','0','3','1331689847');
+INSERT INTO `dede_kwkeyword` VALUES('5','4','马赛克 创意','0','0','3','1331689863');
+INSERT INTO `dede_kwkeyword` VALUES('6','4','马赛克 新奇','0','0','3','1331689904');
+INSERT INTO `dede_kwkeyword` VALUES('7','5','马赛克 图库','0','0','3','1331689916');
+INSERT INTO `dede_kwkeyword` VALUES('8','6','马赛克 视频','0','0','3','1331689940');
+INSERT INTO `dede_kwkeyword` VALUES('9','7','马赛克 安装技巧','0','0','3','1331689954');
+INSERT INTO `dede_kwkeyword` VALUES('10','7','马赛克 装修','0','0','2','1331689679');
+INSERT INTO `dede_kwkeyword` VALUES('11','7','马赛克 技巧','0','0','2','1331689679');
+INSERT INTO `dede_kwkeyword` VALUES('12','8','马赛克 名词','0','0','2','1331689717');
+INSERT INTO `dede_kwkeyword` VALUES('13','8','马赛克 常识','0','0','2','1331689737');
+INSERT INTO `dede_kwkeyword` VALUES('14','8','马赛克 百科','0','0','2','1331689757');

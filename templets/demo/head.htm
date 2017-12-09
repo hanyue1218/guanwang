@@ -1,0 +1,34 @@
+<div class="wrap-header">
+  <div class="layout bg-black wrap-top">
+    <div class="container height-big text-white"> <!--<span class="float-right"> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="text-red">中文站</a>&nbsp;&nbsp;<span class="text-little"> | </span><a href="#" class="text-white">English</a>&nbsp;&nbsp; </span>--> <span class="hidden-l">{dede:global.cfg_mc/}</span> </div>
+  </div>
+  <div class="container topmenu">
+    <div class="line">
+      <div class="xl12 xs2 xm2 xb3 padding-top logo">
+        <button class="button icon-navicon float-right" data-target="#header-demo3"></button>
+        <a href="/"><img src="/skin/images/logo.png" alt="{dede:global.cfg_webname/}"/></a> </div>
+      <div class=" xl12 xs10 xm10 xb9 nav-navicon" id="header-demo3">
+        <div class="text-right navbar navbar-big">
+          <ul class="nav nav-menu nav-inline nav-pills text-right">
+            <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='active' ":@me="";{/dede:field}><a href="/" class="topa"> 首页</a></li>
+            {dede:channelartlist typeid='top' currentstyle='active'}
+            <li class='{dede:field.currentstyle/}'><a href="{dede:field name='typeurl'/}" class="topa">{dede:field name='typename'/}</a>
+              <ul {dede:field name=typeid runphp="yes"}
+global $dsql;
+$sql = "SELECT id From `#@__arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+$row = $dsql->
+                GetOne($sql);
+                @me=is_array($row)?'class="drop-menu"':'style="display:none"';
+                {/dede:field}
+                > {dede:channel type='son' noself='yes'}
+                <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                {/dede:channel}
+              </ul>
+            </li>
+            {/dede:channelartlist}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

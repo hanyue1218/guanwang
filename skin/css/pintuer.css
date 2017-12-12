@@ -5038,7 +5038,8 @@ th.print-show, td.print-show {
 	padding: 20px
 }
 .padding-big-top {
-	padding-top: 20px
+	padding-top: 20px;
+	color: #b9a276;
 }
 .padding-big-right {
 	padding-right: 20px
